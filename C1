@@ -1,9 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C1 – Sample Project</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --text: #c9d1d9;
+      --accent: #58a6ff;
+      --card: #161b22;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #ffffff;
+        --text: #24292f;
+        --accent: #0969da;
+        --card: #f6f8fa;
+      }
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    h1 { color: var(--accent); text-align: center; }
+    pre { background: #010409; color: #fff; padding: 1rem; border-radius: 8px; overflow-x: auto; }
+    a { color: var(--accent); }
+  </style>
+</head>
 <body>
+  <div class="container">
+    <h1>C1</h1>
+    <p>This is your <strong>C1</strong> sample – a clean single HTML file ready for GitHub or instant preview.</p>
+    
+    <h2>Features</h2>
+    <ul>
+      <li>Single file (exactly <code>C1.html</code>)</li>
+      <li>Auto dark/light mode (respects system preference)</li>
+      <li>Fully responsive</li>
+      <li>No external dependencies</li>
+      <li>Perfect for quick prototypes or coding problems</li>
+    </ul>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+    <h2>Quick start</h2>
+    <pre><code>git init
+git add C1.html
+git commit -m "feat: add C1 sample"
+git branch -M main
+git remote add origin https://github.com/1ronD3mon/Test-1.git
+git push -u origin main</code></pre>
 
+    <p style="text-align:center; margin-top:3rem;">
+      <a href="https://github.com/1ronD3mon/Test-1">View on GitHub →</a>
+    </p>
+  </div>
 </body>
 </html>
